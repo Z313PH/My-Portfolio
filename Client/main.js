@@ -6,7 +6,7 @@ const showCharacter = (e) => {
 	e.preventDefault();
 	let name = e.target[0].value.toLowerCase();
 	axios
-		.get(`http://localhost:4000/starwars/${name}`)
+		.get(`/starwars/${name}`)
 		.then((res) => {
 		
 			const {
