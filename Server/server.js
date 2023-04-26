@@ -12,8 +12,9 @@ app.get("/", (req, res) => {
 	res.status(200).sendFile(path.join(__dirname, "../Client/main.html"));
 });
 
-const { getInfoFromSwapi } = require("./controller");
+const { getInfoFromSwapi, getAllCharacters } = require("./controller");
 
 app.get("/starwars/:id", getInfoFromSwapi);
+app.get("/starwars/", getAllCharacters);
 
 app.listen(4000, console.log("Server up and running on port 4000"));

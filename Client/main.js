@@ -1,6 +1,21 @@
 const starwarsForm = document.querySelector("form");
 const input = document.querySelector("#sw-input");
 const starwarsInfo = document.querySelector(".starwars-info");
+const characters = document.querySelector(".characters");
+
+const getAllCharacters = () => {
+	axios
+		.get("/starwars/")
+		.then((res) => {
+			console.log(res.data)
+			for (let i = 0; i < res.data.length; i++) {
+				let newName = document.createElement("p");
+				newName.textContent = res.data[i];
+				characters.appendChild(newName);
+			}
+		})
+		.catch((error) => console.log(error));
+};
 
 const showCharacter = (e) => {
 	e.preventDefault();
@@ -8,7 +23,6 @@ const showCharacter = (e) => {
 	axios
 		.get(`/starwars/${name}`)
 		.then((res) => {
-		
 			const {
 				name,
 				height,
@@ -31,11 +45,13 @@ const showCharacter = (e) => {
                 <p>Gender: ${gender}</p>
             `;
 
-			starwarsInfo.style = "opacity: 1;"
+			starwarsInfo.style = "opacity: 1;";
 		})
 		.catch((error) => console.log(error));
-	
-		input.value = ""
+
+	input.value = "";
 };
+
+getAllCharacters()
 
 starwarsForm.addEventListener("submit", showCharacter);

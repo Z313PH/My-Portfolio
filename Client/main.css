@@ -234,3 +234,9 @@ a:hover::after {
     color: #A8DADC;
     text-shadow: 0 0 .5rem #1D3557;
 }
+
+.characters{
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+}
