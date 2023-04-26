@@ -143,7 +143,6 @@ a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     gap: 1rem;
     position: relative;
     min-height: 40rem;
@@ -180,4 +179,58 @@ a:hover::after {
 
 .slide-out2:hover {
     bottom: 38rem;
+}
+
+.slide-out2-title{
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.slide-out2>form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.slide-out2>form>input{
+    color: #E63946;
+    text-align: center;
+    border-radius: .3rem;
+    border: none;
+}
+.slide-out2>form>input:focus{
+    outline: none;
+}
+.slide-out2>form>input::placeholder{
+    text-align: center;
+    color: #1D3557;
+}
+
+.slide-out2>form>button{
+    color: #F1FAEE;
+    background-color: #1D3557;
+    border: none;
+    border-radius: .3rem;
+    transition: background-color .3s, color .3s, transform .1s;
+}
+.slide-out2>form>button:hover{
+    color: #E63946;
+    background-color: #A8DADC;
+}
+
+.slide-out2>form>button:active{
+    transform: scale(1.2);
+}
+
+.starwars-info{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.starwars-info>p{
+    color: #A8DADC;
+    text-shadow: 0 0 .5rem #1D3557;
 }

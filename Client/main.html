@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./other/reset.css">
     <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="./main.js" defer></script>
     <title>Messing Around</title>
 </head>
@@ -15,7 +16,7 @@
     <div class="main-body">
         <Header>
             <nav class="links-left centering">
-                <a href="" target="_blank">RESUME</a>
+                <a href="">RESUME</a>
                 <a href="">PROJECTS</a>
             </nav>
             <div class="title centering">
@@ -38,7 +39,13 @@
             <span class="aboutme-arrow">⌄</span>
         </div>
         <div class="slide-out2">
-            <span class="links-tab">Links</span>
+            <h1 class="slide-out2-title">Look up your favorite Star Wars character!</h1>
+            <form>
+                <input id="sw-input" type="text" placeholder="Type a name!">
+                <button>Click and be amazed!</button>
+            </form>
+            <div class="starwars-info"></div>
+            <span class="links-tab">Star Wars Fun!!</span>
             <span class="aboutme-arrow">⌄</span>
         </div>
     </div>
