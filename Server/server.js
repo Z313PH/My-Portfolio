@@ -9,12 +9,7 @@ app.use(cors());
 app.use(express.static("Client"));
 
 app.get("/", (req, res) => {
-	res.status(200).sendFile(path.join(__dirname, "../Client/index.html"));
+	res.status(200).sendFile(path.join(__dirname, "../index.html"));
 });
-
-const { getInfoFromSwapi, getAllCharacters } = require("./controller");
-
-app.get("/starwars/:id", getInfoFromSwapi);
-app.get("/starwars/", getAllCharacters);
 
 app.listen(4000, console.log("Server up and running on port 4000"));
