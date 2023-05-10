@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.static("Client"));
 
 app.get("/", (req, res) => {
-	res.status(200).sendFile(path.join(__dirname, "../Client/main.html"));
+	res.status(200).sendFile(path.join(__dirname, "../Client/index.html"));
 });
 
 const { getInfoFromSwapi, getAllCharacters } = require("./controller");
