@@ -18,6 +18,7 @@
 
     .aboutme-p {
         font-size: .8rem;
+        max-width: 26rem;
     }
 
     .skills-table {
@@ -25,6 +26,10 @@
         height: 35rem;
         width: 34rem;
         margin-top: -5rem;
+    }
+
+    .projects {
+        height: 74rem;
     }
 
     .projects h1 {
