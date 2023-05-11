@@ -1,0 +1,81 @@
+@media screen and (max-width: 700px) {
+    .title>h1 {
+        font-size: 3rem;
+    }
+
+    .links-left {
+        justify-content: center;
+    }
+
+    .links-right {
+        justify-content: center;
+
+    }
+
+    header>nav>a {
+        font-size: .8rem;
+    }
+
+    .aboutme-p {
+        font-size: .8rem;
+    }
+
+    .skills-table {
+        scale: .7;
+        height: 35rem;
+        width: 34rem;
+        margin-top: -5rem;
+    }
+
+    .projects h1 {
+        scale: .7;
+        width: 30rem;
+    }
+
+    .madlib-madness {
+        padding: .3rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .madlib-madness-title {
+        font-size: 3.8rem;
+    }
+
+    .madlib-madness img {
+        width: 23rem;
+    }
+
+    .madlib-madness p {
+        width: 23rem;
+        font-size: 1rem;
+    }
+
+    .madlib-madness ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .madlib-madness>div {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .footer>aside {
+        position: absolute;
+        bottom: 5rem;
+        left: 5rem;
+    }
+
+    .footer>div {
+        z-index: 1;
+    }
+
+    .footer>span {
+        z-index: 1;
+    }
+}

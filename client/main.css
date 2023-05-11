@@ -331,20 +331,81 @@ a:hover::after {
     background-color: #13243b;
     height: 4rem;
     width: 100%;
+    transition: border-radius .6s, padding-top .6s;
 }
 
-.footer div {
+.footer-active {
+    padding-top: 17rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.footer>div {
     display: flex;
     padding: 2rem;
     gap: 1rem;
 }
 
-.footer span {
+.footer>span {
     padding: 1.5rem;
     color: cornflowerblue;
 }
 
-.footer img {
+.footer>div>a>img {
     height: 2.5rem;
     cursor: pointer;
+}
+
+.footer>section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 50%;
+    background-color: #13243b;
+    transition: bottom .6s;
+}
+
+.footer>section>div {
+    width: max-content;
+}
+
+.footer>section>div>h2 {
+    text-align: center;
+    rotate: 180deg;
+    font-size: 1.4rem;
+    line-height: .7rem;
+    cursor: pointer;
+}
+
+.footer>section>div>h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer>aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: relative;
+    bottom: 10rem;
+    transform-origin: bottom;
+}
+
+.footer>aside>div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer>aside>div>img {
+    max-height: 4rem;
 }
