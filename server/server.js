@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../client")));
 
 app.get("/", (req, res) => {
-	rollbar.log("Someone accessed website!");
 	res.status(200).sendFile(path.join(__dirname, "../client/main.html"));
 });
 
