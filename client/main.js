@@ -8,6 +8,7 @@ const arrows = document.querySelectorAll("span");
 const contactButton = document.querySelector(".footer>section");
 const footer = document.querySelector(".footer");
 const contactInfo = document.querySelector(".footer>aside");
+const footerDiv = document.querySelector(".footer>div");
 
 // Pulldowns
 console.log(arrows);
@@ -54,6 +55,10 @@ const contactActivate = () => {
 		contactInfo.style.transform = "scaleY(0)";
 		contactInfo.style.visibility = "hidden";
 		contactInfo.style.opacity = "0";
+
+		footerDiv.style.transition = "opacity 1s 0s, visibility 0s 0s";
+		footerDiv.style.visibility = "visible";
+		footerDiv.style.opacity = "1";
 	} else {
 		contactButton.style.bottom = "17.4rem";
 
@@ -62,6 +67,10 @@ const contactActivate = () => {
 		contactInfo.style.transform = "scaleY(1)";
 		contactInfo.style.visibility = "visible";
 		contactInfo.style.opacity = "1";
+
+		footerDiv.style.transition = "opacity .5s 0s, visibility 0s .5s";
+		footerDiv.style.opacity = "0";
+		footerDiv.style.visibility = "hidden";
 	}
 
 	footer.classList.toggle("footer-active");
