@@ -28,10 +28,6 @@
         margin-top: -5rem;
     }
 
-    .projects {
-        height: 74rem;
-    }
-
     .projects h1 {
         scale: .7;
         width: 30rem;
@@ -47,22 +43,36 @@
         font-size: 3.8rem;
     }
 
-    .madlib-madness img {
+    .brewphoria-title {
+        font-size: 3.8rem;
+    }
+
+    .madlib-madness>img {
+        width: 23rem;
+    }
+
+    #brewphoria>img {
         width: 23rem;
     }
 
     .madlib-madness p {
         width: 23rem;
+        padding: .5rem;
         font-size: 1rem;
     }
 
-    .madlib-madness ul {
+    .madlib-madness>ul {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         width: 20rem;
         height: 12rem;
+    }
+
+    .madlib-madness>ul>li {
+        border: none;
+        padding-right: 0;
     }
 
     .madlib-madness>div {
