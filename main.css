@@ -448,3 +448,6 @@ a:hover::after {
     max-height: 4rem;
     cursor: pointer;
 }
+.aboutme-image {
+    transform: rotate(90deg);
+}
